@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet " href="css.css">
+</head>
+<body style="background-color:#e6eff2">
+<div class="mn" id="mymn">
+    <span style="font-family:Lucida Handwriting;font-size:1.8vw;padding:40px;text-align:center;"><img src="logo1.jpg" class="responsive" width="100px" height="100px">Freedom251</span>
+    <a href="mobile.html">Mobiles</a>
+    <a href="laptops.html"class="active">Laptops</a>
+    <a href="desktop.html">Desktop</a>
+    <a href="gaming.html">Gaming</a>
+    <a href="index.html" >Products</a>
+    <a href="tablet.html" class="active">Tablets</a>
+    <a href="javascript:void(0);" class="icon" onclick="mymn()">
+    <i class="fa fa-bars"></i>
+   </a>
+</div>
+
+
+<script>
+function mymn() {
+  var x = document.getElementById("mymn");
+  if (x.className === "mn") {
+    x.className += " responsive";
+  } else {
+    x.className = "mn";
+  }
+}
+</script>
+
+
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="mainbackround2.jpg" style="width:100%;">
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="mainbackround3.jpg" style="width:100%;">
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="mainbackround.jpg" style="width:100%;">
+   </div>
+
+</div>
+<br>
+<div style="text-align:center;">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+     <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+ 
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active"><i class="fa fa-tag"></i>&nbsp;&nbsp;Deals</a>
+  <a href="mobile.html"><i class="fa fa-mobile"></i></i>&nbsp;&nbsp;Mobiles</a>
+  <a href="laptops.html"><i class="fa fa-laptop"></i>&nbsp;&nbsp;Laptops</a> 
+  <a href="desktop.html"><i class="fa fa-tv"></i></i>&nbsp;&nbsp;Desktop</a>
+  <a href="gaming.html"><i class="fa fa-gamepad"></i>&nbsp;&nbsp;Gaming</a>
+  <a href="tablet.html"><i class="fa fa-tablet"></i>&nbsp;&nbsp;Tablets</a>
+
+
+
+  <a href="javascript:void(0);" class="icon" onclick="mymn()">
+  <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop >0 || document.documentElement.scrollTop >0) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+}
+</script>
+
+
+
+
+
+
+<div style="border:0px solid red;height:20px"></div>
+<div style="border:0px solid red;width:10%;height:70px;float:left;margin-top:0px"></div>
+<div class="mobiletop">Big On Love, Small On Pocket</h1>
+</div>
+<div style="border:0px solid red;width:10%;height:20px;float:left;margin-top:0px"></div>
+
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:80%;float:left;margin-top:-55px">
+
+
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+  <img src="product1.jpg" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM A15s </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+  -  ₹ 5000 instant cashback with HDFC Bank Cards
+  <p><button>Buy now</button></p> 
+   </div>
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+
+  <img src="product2.jpg" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+    <h2>FREEDOM A334</h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+  -  ₹ 5000 instant cashback with HDFC Bank Cards
+  <p><button>Buy now</button></p> 
+  </div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product3.jpg" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM F17  </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+  -  ₹ 5000 instant cashback with HDFC Bank Cards
+  <p><button>Buy now</button></p> 
+  </div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product4.png" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM a54  </h2>
+
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+  -  ₹ 5000 instant cashback with HDFC Bank Cards
+  <p><button>Buy now</button></p> 
+  </div>
+
+</div>
+
+
+
+<!----new-->
+<div class="adder" ></div>
+
+<div style="border:0px solid red;height:20px"></div>
+<div style="border:0px solid red;width:10%;height:70px;float:left;margin-top:0px"></div>
+<div class="mobiletop">
+Grab Now, Or Gone</h1>
+</div>
+<div style="border:0px solid red;width:10%;height:20px;float:left;margin-top:0px"></div>
+
+
+
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:10%;float:left">
+</div>
+<div style="border:0px solid red;height:100px;width:80%;float:left;margin-top:-55px">
+
+
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+  <img src="product5.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM A15s </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+
+  <img src="product6.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+    <h2>FREEDOM A334</h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product7.jpg" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM F17  </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product8.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM a54  </h2>
+
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+
+
+
+
+</div>
+
+
+
+
+<!-- jhfgklfg-->
+<div class="adder" ></div>
+
+
+
+<div style="border:0px solid red;height:20px"></div>
+<div style="border:0px solid red;width:10%;height:70px;float:left;margin-top:0px"></div>
+<div class="mobiletop">
+Offers On Tablet's</h1>
+</div>
+<div style="border:0px solid red;width:10%;height:20px;float:left;margin-top:0px"></div>
+
+
+
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:10%;float:left">
+</div>
+<div style="border:0px solid red;height:100px;width:80%;float:left;margin-top:-55px">
+
+
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+  <img src="product9.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM A15s </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+
+  <img src="product10.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+    <h2>FREEDOM A334</h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product11.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM F17  </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product12.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM a54  </h2>
+
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+
+
+
+
+</div>
+
+
+<!-- jhfgklfg-->
+<div class="adder" ></div>
+
+
+
+<div style="border:0px solid red;height:20px"></div>
+<div style="border:0px solid red;width:10%;height:70px;float:left;margin-top:0px"></div>
+<div class="mobiletop">
+Savings On Big Screen's</h1>
+</div>
+<div style="border:0px solid red;width:10%;height:20px;float:left;margin-top:0px"></div>
+
+
+
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:10%;float:left">
+</div>
+<div style="border:0px solid red;height:100px;width:80%;float:left;margin-top:-55px">
+
+
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+  <img src="product13.png" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM A15s </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+
+  <img src="product14.png" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+    <h2>FREEDOM A334</h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product15.png" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM F17  </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product16.png" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM a54  </h2>
+
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+
+
+
+
+</div>
+
+
+<!-- jhfgklfg-->
+<div class="adder" ></div>
+
+
+
+<div style="border:0px solid red;height:20px"></div>
+<div style="border:0px solid red;width:10%;height:70px;float:left;margin-top:0px"></div>
+<div class="mobiletop">
+Special Offers for student's</h1>
+</div>
+<div style="border:0px solid red;width:10%;height:20px;float:left;margin-top:0px"></div>
+
+
+
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:10%;float:left">
+</div>
+<div style="border:0px solid red;height:100px;width:80%;float:left;margin-top:-55px">
+
+
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+  <img src="laptop5.jpeg"  width="250px" height="500px" style="heigth:0px;padding-left:13px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM A15s </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+
+  <img src="laptop6.jpeg"  width="260px" height="550px" style="padding-left:13px;border-radius: 3%;"class="responsive">
+    <h2>FREEDOM A334</h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="laptop4.jpeg"  width="300px" height="550px" style="padding-left:13px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM F17  </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="laptop3.jpeg" width="300px" height="550px" style="padding-left:13px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM a54  </h2>
+
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- jhfgklfg-->
+<div class="adder" ></div>
+
+
+
+<div style="border:0px solid red;height:20px"></div>
+<div style="border:0px solid red;width:10%;height:70px;float:left;margin-top:0px"></div>
+<div class="mobiletop">
+For The Gammer in you...!</h1>
+</div>
+<div style="border:0px solid red;width:10%;height:20px;float:left;margin-top:0px"></div>
+
+
+
+<div style="border:0px solid red;height:100px;width:10%;float:left"></div>
+<div style="border:0px solid red;height:100px;width:10%;float:left">
+</div>
+<div style="border:0px solid red;height:100px;width:80%;float:left;margin-top:-55px">
+
+
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+  <img src="product21.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM A15s </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="card" style="padding:10px;border-radius: 3%; ">
+
+  <img src="product26.jpg" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+    <h2>FREEDOM A334</h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product22.webp" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM F17  </h2>
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+  <div class="cardd" style="padding:10px;border-radius: 3%; ">
+  <img src="product25.jpg" alt="Denim Jeans" style="width:100%;height:250px;border-radius: 3%;"class="responsive">
+  <h2>FREEDOM a54  </h2>
+
+  <p class="price">11,990 Rs</p>
+
+  <span>- Faster And Smoother<span><br><br>
+-  ₹ 5000 instant cashback with HDFC Bank Cards
+<p><button>Buy now</button></p> 
+</div>
+
+
+
+
+</div>
+
+
+
+
+<!-- footer for laptop/destop-->
+
+<div class="adder" ></div>
+
+<div class="footer">
+<div class="extra">
+
+
+
+</div>
+<div class="tags" >
+<h1 class="dotsk" >freedom</h1>
+<h3  class="red" >Products</h3>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Mobiles</a>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Laptops</a>
+<br><a href="last.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Desktop</a>
+<br><a href="https://www.mahapolice.gov.in/" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Gaming</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Tablets</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">TV's </a>
+<br>
+
+
+</div>
+<div class="tags" >
+<h1 class="dotskk"  >.</h1>
+<h3  class="red" >Let Us Help You</h3>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Who we are</a>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Code of Couduct</a>
+<br><a href="last.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Community</a>
+<br><a href="https://www.mahapolice.gov.in/" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Report Fraud </a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Contact</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Mobile apps </a></div>
+
+
+<div class="tagss" >
+<h1 class="dotss" >. </h1>
+<h3  class="red" >For Business</h3>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">My Orders</a>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Track my order</a>
+<br><a href="last.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Tech talks</a>
+<br><a href="https://www.mahapolice.gov.in/" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Report Fraud</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Guides</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Impact </a></div>
+<div class="tagss"  >
+<h1 class="dotss" >. </h1>
+<h3  class="red" >For You</h3>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Business  </a>
+<br><a href="aboutus.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Who we are</a>
+<br><a href="last.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Privacy</a>
+<br><a href="https://www.mahapolice.gov.in/" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Terms & condition</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Security</a>
+<br><a href="contact.html" style="color:#636161;text-decoration:none;font-family:Arial;color:#e3e1e1">Sitemap </a></div>
+
+
+<!-- footer for mobile/tablet -->
+
+
+
+
+
+</div>
+
+
+<div class="lfooter">
+
+By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021
+<br>
+© Piyushwala™ Ltd. All rights reserved.
+</div>
+
+<div class="lfooter2" style=";float:right;">
+<i class="fa fa-instagram"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-whatsapp"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-linkedin"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-youtube"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-envelope"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-twitter"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fafa-facebook"  style="font-size:25px"></i>&nbsp;&nbsp;&nbsp;
+<i class="fa fa-globe"  style="font-size:25px></i>
+
+
+
+</div>
+
+</body>
+</html>
+
